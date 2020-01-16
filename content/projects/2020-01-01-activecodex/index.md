@@ -12,6 +12,7 @@ tech:
     - "JavaScript ES6+"
     - "ReactJS"
     - "Gatsby"
+    - "GraphQL"
     - "Netlify"
     - "SCSS"
     - "npm"
