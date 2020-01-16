@@ -7,7 +7,7 @@ hero: "./hero.jpg"
 title: "ActiveCodex"
 url: "https://www.activecodex.com/"
 archive: ""
-github: "https://github.com/ActiveCodex/gatsby-activecodex"
+github: "https://github.com/ActiveCodex/activecodex-2020"
 tech:
     - "JavaScript ES6+"
     - "ReactJS"
