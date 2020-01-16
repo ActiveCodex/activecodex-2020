@@ -1,5 +1,5 @@
 <h1 align="center">
-    (www.activecodex.com)[https://www.activecodex.com/]
+    [www.activecodex.com](https://www.activecodex.com/)
 </h1>
 <p align="center">
     Welcome to ActiveCodex, a tiny space in the digital world where Mohammed Abbas, a Front-End Software Engineer in Birmingham, England, can showcase his work.
