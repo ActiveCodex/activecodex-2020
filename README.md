@@ -2,7 +2,7 @@
     <a href="https://www.activecodex.com/" target="_blank">www.activecodex.com</a>
 </h1>
 <p align="center">
-    Welcome to ActiveCodex, a tiny space in the digital world where Mohammed Abbas, a Front-End Software Engineer in Birmingham, England, can showcase his work.
+    Welcome to ActiveCodex, a tiny space in the digital world where Mohammed Abbas, a Front-End Software Engineer in Birmingham, England, can showcase his work and skills.
 </p>
 <p align="center">
     In time, he'll be enhancing the code, adding new features, projects and blog articles.
