@@ -15,11 +15,10 @@ tags:
   - app
   - recipe
 ---
-<a rel="noopener noreferrer" target="_blank" href="xxxx">xxxxxx</a>
-**Demo:** [https://hungry-edison-e52dfe.netlify.com/](https://hungry-edison-e52dfe.netlify.com/)
 
-<a rel="noopener noreferrer" target="_blank" href="xxxx">xxxxxx</a>
-**Github:** [https://github.com/ActiveCodex/Cooking-with-React](https://github.com/ActiveCodex/Cooking-with-React)
+**Demo:** <a rel="noopener noreferrer" target="_blank" href="https://hungry-edison-e52dfe.netlify.com/">https://hungry-edison-e52dfe.netlify.com/</a>
+
+**Github:** <a rel="noopener noreferrer" target="_blank" href="https://github.com/ActiveCodex/Cooking-with-React">https://github.com/ActiveCodex/Cooking-with-React</a>
 
 During my career, I've been in this *Microsoft bubble* and wasn't aware of how the open-source world has progressed so fast. Netlify, Headless CMS, JAMstack and Git to just name a few, I've heard half of these terms but didn't persue to learn and understand what these do and how usefull it can.
 
@@ -27,7 +26,7 @@ In order to help me decide on which JavaScript framework to start with, I've rea
 
 I found the best way I learn is when I'm at the job, through heuristic testing, observation and tinkering... plus I didn't want to spend weeks following an online course where it contained 100+ hours of videos.
 
-Watching <a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw">Web Dev Simplified</a> on YouTube for months now, and when he mentioned about his new course where you <a rel="noopener noreferrer" target="_blank" href="https://courses.webdevsimplified.com/learn-react-today">"Learn React and all its modern features such as hooks and context in **less than a day** with this highly focused React course"</a>, I got very excited, but this excitement didn't last long and I forgot about it.
+Watching <a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw/videos">Web Dev Simplified</a> on YouTube for months now, and when he mentioned about his new course where you <a rel="noopener noreferrer" target="_blank" href="https://courses.webdevsimplified.com/learn-react-today">"Learn React and all its modern features such as hooks and context in **less than a day** with this highly focused React course"</a>, I got very excited, but this excitement didn't last long and I forgot about it.
 
 Couple of months went by and in one of his videos, he mention that there was a sale on his new React course, and I thought: **'It's now or never'**, *(... or perhaps later)*, it was time for me to jump on the wagon and so I bought the course, have set myself a goal to finish it and create a React app before the end of this year.
 
