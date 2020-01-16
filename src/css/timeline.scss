@@ -1,0 +1,274 @@
+.react-tabs {
+  text-align: left;
+}
+
+ul[role="tablist"] {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  color: silver;
+}
+
+ul[role="tablist"] li {
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+}
+
+ul[role="tablist"] li:not(:first-child):not(:last-child):hover {
+  color: grey;
+}
+
+ul[role="tablist"] li.react-tabs__tab--selected {
+  color: black !important;
+}
+
+ul[role="tablist"] span.dot {
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border: solid 4px #e0e0e0;
+  background: #ffffff;
+  z-index: 1;
+  position: relative;
+  transform: scale(0.5);
+  vertical-align: middle;
+  transition: 0.2s transform;
+}
+
+ul[role="tablist"] li.react-tabs__tab.react-tabs__tab--selected span.dot {
+  border-color: $primary !important;
+  transform: scale(1) !important;
+}
+
+ul[role="tablist"] li.react-tabs__tab[data-path="experience"] span.dot {
+  border-color: rgba(0, 128, 0, 0.5);
+}
+
+ul[role="tablist"] li.react-tabs__tab[data-path="certificate"] span.dot {
+  border-color: rgba(255, 166, 0, 0.5);
+}
+
+ul[role="tablist"] li.react-tabs__tab[data-path="education"] span.dot {
+  border-color: rgba(137, 43, 226, 0.5);
+}
+
+ul[role="tablist"]:before {
+  position: absolute;
+  content: "";
+  display: block;
+  background: silver;
+}
+
+div[role="tabpanel"] > h3,
+div[role="tabpanel"] > p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 575px) {
+}
+
+@media only screen and (max-width: 767px) {
+  ul[role="tablist"] {
+    margin: 0 0 30px;
+  }
+
+  ul[role="tablist"]:before {
+    height: 1px;
+    left: 15px;
+    right: 15px;
+    top: 14px;
+  }
+
+  ul[role="tablist"] li:first-child,
+  ul[role="tablist"] li:last-child {
+    display: none;
+  }
+
+  ul[role="tablist"] span.txt {
+    display: none;
+  }
+
+  ul[role="tablist"] li[data-path="certificate"] {
+    transform: translateY(20px);
+  }
+
+  ul[role="tablist"] li[data-path="education"] {
+    transform: translateY(-20px);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .react-tabs {
+    display: flex;
+  }
+
+  ul[role="tablist"] {
+    flex-direction: column-reverse;
+    margin: 0 30px 0 140px;
+  }
+
+  ul[role="tablist"]:before {
+    width: 2px;
+    left: 14px;
+    bottom: 14px;
+    top: 14px;
+  }
+
+  ul[role="tablist"] li {
+    padding: 5px 0;
+  }
+
+  ul[role="tablist"] span.txt {
+    display: inline-block;
+    transform: translateX(15px);
+  }
+
+  ul[role="tablist"] li[data-path="certificate"] {
+    transform: translateX(35px);
+  }
+
+  ul[role="tablist"] li[data-path="education"] {
+    transform: translateX(-35px);
+  }
+
+  ul[role="tablist"] li[data-path="education"] span.txt {
+    transform: translateX(30px);
+  }
+
+  ul[role="tablist"] li:not(:first-child):not(:last-child):hover span.dot {
+    transform: scale(0.75);
+  }
+
+  ul[role="tablist"] li:before,
+  ul[role="tablist"] li:after {
+    position: absolute;
+    content: "";
+    display: block;
+    border: solid 1px transparent;
+    left: 14px;
+    height: 14px;
+    z-index: -1;
+  }
+
+  ul[role="tablist"] li:before {
+    top: 0;
+    border-color: silver;
+  }
+
+  ul[role="tablist"] li:after {
+    bottom: 0;
+    border-color: silver;
+  }
+
+  ul[role="tablist"] li[data-path="certificate"] + li[data-path="experience"]:after,
+  ul[role="tablist"] li[data-path="start"] + li[data-path="certificate"]:before {
+    height: 30px;
+    width: 60px;
+    border-radius: 50%;
+    border: dashed 2px transparent;
+    transform: rotate(45deg);
+    border-top-color: silver;
+    top: 27px;
+    bottom: auto;
+    left: -4px;
+  }
+
+  ul[role="tablist"] li[data-path="start"] + li[data-path="certificate"]:before {
+    top: -12px;
+    left: -39px;
+  }
+
+  ul[role="tablist"] li[data-path="experience"] + li[data-path="certificate"]:after,
+  ul[role="tablist"] li[data-path="start"] + li[data-path="certificate"]:after {
+    height: 60px;
+    width: 30px;
+    border-radius: 50%;
+    border: dashed 2px transparent;
+    transform: rotate(45deg);
+    top: 8px;
+    border-right-color: silver;
+    left: -24px;
+  }
+
+  ul[role="tablist"] li[data-path="education"] + li[data-path="experience"]:after {
+    height: 60px;
+    width: 30px;
+    border-radius: 50%;
+    border: dashed 2px transparent;
+    transform: rotate(45deg);
+    top: 12px;
+    border-left-color: silver;
+    left: -11px;
+  }
+
+  ul[role="tablist"] li[data-path="certificate"] + li[data-path="education"]:after {
+    height: 30px;
+    width: 60px;
+    border-radius: 50%;
+    border: dashed 2px transparent;
+    transform: rotate(45deg);
+    border-bottom-color: silver;
+    right: auto;
+    bottom: -13px;
+    left: 9px;
+  }
+
+  ul[role="tablist"] li[data-path="certificate"] + li[data-path="education"]:before,
+  ul[role="tablist"] li[data-path="education"] + li[data-path="education"]:after {
+    border-style: dashed;
+  }
+
+  ul[role="tablist"] li[data-path="experience"] + li[data-path="certificate"]:before,
+  ul[role="tablist"] li[data-path="education"] + li[data-path="education"]:before,
+  ul[role="tablist"] li[data-path="education"] + li[data-path="experience"]:before {
+    content: none;
+  }
+
+  ul[role="tablist"] li[data-path="certificate"] + li[data-path="education"] {
+    margin-bottom: 39px;
+  }
+}
+
+ul.keys {
+  font-size: 0.6rem;
+  list-style: none;
+  margin: 0 0 20px;
+}
+
+ul.keys li {
+  display: inline-block;
+}
+
+ul.keys li ~ li {
+  margin-left: 15px;
+}
+
+ul.keys li.key:before {
+  border: solid 10px transparent;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 10px;
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 10px;
+}
+
+ul.keys li.key.key--experience:before {
+  border-color: rgba(0, 128, 0, 0.5);
+}
+
+ul.keys li.key.key--education:before {
+  border-color: rgba(137, 43, 226, 0.5);
+}
+
+ul.keys li.key.key--certificate:before {
+  border-color: rgba(255, 166, 0, 0.5);
+}
