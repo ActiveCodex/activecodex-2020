@@ -17,17 +17,9 @@ html {
   text-align: center;
   -webkit-overflow-scrolling: touch;
 }
+
 body {
   color: $text;
-}
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: sans-serif;
 }
 
 @media only screen and (max-width: 767px) {
