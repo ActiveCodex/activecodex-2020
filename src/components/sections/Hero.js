@@ -17,7 +17,6 @@ export default ({ id, data }) => {
             <div>
                 <div dangerouslySetInnerHTML={{ __html: data.html }}></div>
                 <br/>
-                {/* <a className="scroll" href="#me"><IconScroll /></a> */}
                 <span className="scroll"><IconScroll /></span>
             </div>
         </Hero>

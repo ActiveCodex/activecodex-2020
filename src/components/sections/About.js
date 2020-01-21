@@ -13,7 +13,7 @@ export default ({ id, data }) => {
                                 {data.frontmatter.title}<br/>
                                 {data.frontmatter.location}
                             </p>
-                            <p><a className="btn btn--secondary" rel="noopener noreferrer" target="_blank" href="/resume/">View resume</a></p>
+                            <p><a className="btn btn--secondary" rel="noopener noreferrer" target="_blank" href={data.frontmatter.resume}>View resume</a></p>
                         </div>
                     </div>
                     <div className="content" dangerouslySetInnerHTML={{ __html: data.html }} />
