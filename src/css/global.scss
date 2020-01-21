@@ -233,7 +233,14 @@ code {
   color: white;
   padding: 15px;
 }
-
+#hero {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+  min-height: calc(100vh - 86px);
+  padding: 0 15px;
+}
 #hero .scroll {
   position: absolute;
   bottom: 30px;
