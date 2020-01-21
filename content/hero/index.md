@@ -1,1 +1,1 @@
-# Out of <a rel="noopener noreferrer" target="_blank" href="https://news.netcraft.com/archives/category/web-server-survey/">1,268,289,402</a> websites,<br/>I'm really glad you decided to check out my one.
+# Out of <a rel="noopener noreferrer" target="_blank" href="https://news.netcraft.com/archives/category/web-server-survey/">1,295,973,827</a> websites,<br/>I'm really glad you decided to check out my one.
