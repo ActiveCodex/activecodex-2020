@@ -19,23 +19,6 @@ main {
 
     a.btn:link,
     a.btn:visited {
-      background: $primary;
-      border: solid 2px $primary;
-      border-radius: 4px;
-      color: white;
-      padding: 10px 15px;
-      text-decoration: none;
-    }
-
-    a.btn:hover,
-    a.btn:focus {
-      background: $primaryHover;
-      color: white;
-    }
-
-    a.btn.btn--secondary:link,
-    a.btn.btn--secondary:visited {
-      background: transparent;
       border: solid 2px transparent;
       border-radius: 4px;
       color: $primary;
@@ -43,9 +26,42 @@ main {
       text-decoration: none;
     }
 
+    a.btn:hover,
+    a.btn:focus {
+      border-color: $primaryHover;
+      color: $primaryHover;
+    }
+
+    a.btn.btn--sm {
+      border-width: 1px;
+      font-size: 0.8rem;
+      padding: 8px 10px;
+    }
+
+    a.btn.btn--primary:link,
+    a.btn.btn--primary:visited {
+      background: $primary;
+      border-color: $primary;
+      color: white;
+    }
+
+    a.btn.btn--primary:hover,
+    a.btn.btn--primary:focus {
+      background: $primaryHover;
+      border-color: $primaryHover;
+    }
+
+    a.btn.btn--secondary:link,
+    a.btn.btn--secondary:visited {
+      border-color: $primary;
+      color: $primary;
+    }
+
     a.btn.btn--secondary:hover,
     a.btn.btn--secondary:focus {
-      border-color: $primary;
+      background: $primaryHover;
+      border-color: $primaryHover;
+      color: white;
     }
   }
 }

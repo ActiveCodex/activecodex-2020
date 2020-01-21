@@ -15,6 +15,7 @@ tech:
     - "Liquid"
     - "Rest API"
     - "JSON"
+    - "Bootstrap"
     - "Responsive"
     - "CSS"
 images:

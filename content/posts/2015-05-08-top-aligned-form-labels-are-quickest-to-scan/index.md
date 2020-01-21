@@ -1,5 +1,5 @@
 ---
-path: "/blog/xxxxxx/"
+path: "/blog/aligned-form-labels-are-quickest-to-scan/"
 date: 2015-05-08
 published: true
 hero: "../hero.jpg"

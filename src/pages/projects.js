@@ -1,9 +1,9 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
+import Layout from '../layouts';
 import Article from '../components/Article';
 
-const ProjectPage = ({ location, data }) => (
+const ProjectPage = ({ data }) => (
     <Layout id={'project'} title={'Projects'} description={"Some of my projects"}>
         <section>
             <div className="container container--xl">

@@ -13,6 +13,7 @@ tech:
     - "JavaScript"
     - "jQuery"
     - "Liquid"
+    - "Bootstrap"
     - "Responsive"
     - "CSS"
 images:

@@ -4,9 +4,9 @@ import { Link } from 'gatsby';
 export default function nav() {
     return (
         <nav>
-            <Link activeClassName="active" to="/">About</Link>
-            <Link activeClassName="active" to="/projects/">Projects</Link>
-            <Link activeClassName="active" to="/blog/">Blog</Link>
+            <Link activeClassName="active" to="/">Home</Link>
+            <Link activeClassName="active" partiallyActive={true} to="/projects/">Projects</Link>
+            <Link activeClassName="active" partiallyActive={true} to="/blog/">Blog</Link>
         </nav>
     )
 }

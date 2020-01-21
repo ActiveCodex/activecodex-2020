@@ -1,5 +1,5 @@
 ---
-path: "/blog/xxxxxx/"
+path: "/blog/el-addeventlistener-click-dosomething-true/"
 date: 2015-11-23
 published: true
 hero: "../hero.jpg"

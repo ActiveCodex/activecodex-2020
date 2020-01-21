@@ -17,6 +17,7 @@ tech:
     - "SCSS"
     - "npm"
     - "BEM"
+    - "Responsive"
 ---
 
 After many years, I've decided to relaunch my portfolio.

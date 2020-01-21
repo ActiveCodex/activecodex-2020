@@ -1,11 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import IconScroll from '../../img/icons/IconScroll';
 
 const Hero = styled.section`
     align-items: center;
     display: flex;
-    min-height: calc(100vh - 86px);
     justify-content: center;
+    margin-bottom: 120px;
+    min-height: calc(100vh - 86px);
     padding: 0 15px;
 `;
 
@@ -15,7 +17,8 @@ export default ({ id, data }) => {
             <div>
                 <div dangerouslySetInnerHTML={{ __html: data.html }}></div>
                 <br/>
-                <a className="btn btn--secondary" href="#about">Scroll down</a>
+                {/* <a className="scroll" href="#me"><IconScroll /></a> */}
+                <span className="scroll"><IconScroll /></span>
             </div>
         </Hero>
     )

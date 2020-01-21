@@ -1,11 +1,11 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
-import Layout from '../components/Layout';
+import Layout from '../layouts';
 
-export default ({ data }) => {
+export default ({ location, data }) => {
     const post = data.markdownRemark;
     return (
-        <Layout id={'article'} title={post.frontmatter.title} description={post.frontmatter.title}>
+        <Layout location={location} id={'article'} title={post.frontmatter.title} description={post.frontmatter.title}>
             <section>
                 <div className="container">
                     <article>

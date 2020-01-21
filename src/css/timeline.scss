@@ -43,8 +43,29 @@ ul[role="tablist"] span.dot {
 }
 
 ul[role="tablist"] li.react-tabs__tab.react-tabs__tab--selected span.dot {
-  border-color: $primary !important;
+  background: $primary;
+  border-color: $primary;
   transform: scale(1) !important;
+}
+
+ul[role="tablist"] li:not(:first-child):hover span.dot {
+  transform: scale(0.75);
+}
+
+ul[role="tablist"] li.react-tabs__tab[data-path="experience"].react-tabs__tab--selected span.dot {
+  background: rgb(0, 128, 0);
+}
+
+ul[role="tablist"] li.react-tabs__tab[data-path="certificate"].react-tabs__tab--selected span.dot {
+  background: rgb(255, 166, 0);
+}
+
+ul[role="tablist"] li.react-tabs__tab[data-path="education"].react-tabs__tab--selected span.dot {
+  background: rgb(137, 43, 226);
+}
+
+ul[role="tablist"] li.react-tabs__tab[data-path="present"] span.dot {
+  border-color: $primary;
 }
 
 ul[role="tablist"] li.react-tabs__tab[data-path="experience"] span.dot {
@@ -60,14 +81,13 @@ ul[role="tablist"] li.react-tabs__tab[data-path="education"] span.dot {
 }
 
 ul[role="tablist"]:before {
-  position: absolute;
+  background: silver;
   content: "";
   display: block;
-  background: silver;
+  position: absolute;
 }
 
-div[role="tabpanel"] > h3,
-div[role="tabpanel"] > p {
+div[role="tabpanel"] > h3 {
   margin: 0;
 }
 
@@ -140,10 +160,6 @@ div[role="tabpanel"] > p {
 
   ul[role="tablist"] li[data-path="education"] span.txt {
     transform: translateX(30px);
-  }
-
-  ul[role="tablist"] li:not(:first-child):not(:last-child):hover span.dot {
-    transform: scale(0.75);
   }
 
   ul[role="tablist"] li:before,

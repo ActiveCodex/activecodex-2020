@@ -1,8 +1,8 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
-import Layout from '../components/Layout';
+import Layout from '../layouts';
 
-export default ({ data }) => {
+export default ({ location, data }) => {
     const { markdownRemark } = data;
     const { frontmatter, html } = markdownRemark;
     const { date, title, url, archive, github, tech, images } = frontmatter;
@@ -28,7 +28,7 @@ export default ({ data }) => {
     }
 
     return (
-        <Layout id={'article'} title={title} description={title}>
+        <Layout location={location} id={'article'} title={title} description={title}>
             <article>
                 <section>
                     <div className="container">

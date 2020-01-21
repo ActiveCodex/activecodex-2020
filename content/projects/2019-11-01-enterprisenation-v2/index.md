@@ -15,6 +15,7 @@ tech:
     - "Liquid"
     - "Elasticsearch"
     - "JSON"
+    - "Bootstrap"
     - "Responsive"
     - "CSS"
 images: 

@@ -1,11 +1,9 @@
 $background: #ffffff;
-$text: #000c;
+$backgroundAlt: #eef0f2;
+$text: #1c1c1c;
 $primary: #ff4a4a;
 
-$primaryHover: #ff4a4a;
-
-$secondary2: hsl(0, 100%, 35%);
-$tertiary3: #0049a0;
+$primaryHover: hsl(0, 100%, 45%);
 
 @import "./nav.scss";
 @import "./button.scss";
@@ -13,7 +11,6 @@ $tertiary3: #0049a0;
 
 html {
   background: $background;
-//   scroll-behavior: smooth;
   text-align: center;
   -webkit-overflow-scrolling: touch;
 }
@@ -72,12 +69,12 @@ main {
       grid-row-gap: 120px;
     }
   }
-  
+
   .content blockquote {
     min-height: unset;
-    background:none;
-    color:$primary;
-    margin:60px 0;
+    background: none;
+    color: $primary;
+    margin: 60px 0;
   }
 
   blockquote {
@@ -165,7 +162,7 @@ ul.inline {
 }
 
 #articles section:nth-child(odd) {
-  background: #f0f0f0;
+  background: $backgroundAlt;
 }
 
 #articles article {
@@ -216,7 +213,7 @@ article a:hover .hero {
   border-color: $primaryHover;
   border-style: solid;
 }
-article img{
+article img {
   margin: 0;
 }
 .container.container__links {
@@ -235,4 +232,51 @@ code {
   border-radius: 4px;
   color: white;
   padding: 15px;
+}
+
+#hero .scroll {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  width: 33px;
+  height: 33px;
+  margin-left: -15px;
+}
+#hero .scroll svg {
+  background: transparent;
+  fill: $text;
+  transform: scale(1);
+  transition: all 250ms ease;
+  width: 100%;
+  height: 100%;
+}
+#hero a.scroll:hover svg {
+  fill: $primaryHover;
+}
+
+@keyframes mouse-scroll {
+  0% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(5%);
+    opacity: 0;
+  }
+}
+
+#hero .scroll svg path:last-child {
+  animation: mouse-scroll 1.5s infinite;
+  fill: $primary;
+}
+
+del,
+strike {
+  opacity: 0.5;
 }
