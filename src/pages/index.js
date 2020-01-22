@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import Layout from '../layouts';
 
-import ScrollspyNav from "react-scrollspy-nav";
+import Scrollspy from 'react-scrollspy';
 
 /* Sections */
 import Hero from '../components/sections/Hero';
@@ -19,26 +19,24 @@ const IndexPage = ({ data }) => (
         <blockquote><q>I'm a developer, entrepreneur, critical thinker, dreamer, traveller, human being, earthling &amp; anything else I ever decide I want to be.</q></blockquote>
 
         <nav>
-            <ScrollspyNav
-                scrollTargetIds={["me", "skills", "timeline", "projects", "contact"]}
-                offset={1}
-                activeNavClass="active"
-                scrollDuration="500"
-                headerBackground="true"
+            <Scrollspy
+                items={["about", "skills", "timeline", "work", "contact"]}
+                currentClassName="active"
+                offset={-10}
             >
-                <a href="#top">▲</a>
-                <a href="#me">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#timeline">Timeline</a>
-                <a href="#projects">Work</a>
-                <a href="#contact">Contact</a>
-            </ScrollspyNav>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#top">▲</a></li>
+            </Scrollspy>
         </nav>
 
-        <About id="me" data={data.about} />
+        <About id="about" data={data.about} />
         <Skills id="skills" data={data.skills} />
         <Timeline id="timeline" timeline={data.timeline.edges} />
-        <Projects id="projects" data={data.work} projects={data.projects.edges} blog={data.blog.edges} />
+        <Projects id="work" data={data.work} projects={data.projects.edges} blog={data.blog.edges} />
         <Contact id="contact" nodes={data.contact.edges} />
     </Layout>
 );

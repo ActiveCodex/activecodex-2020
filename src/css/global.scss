@@ -100,13 +100,24 @@ main {
     }
   }
   section {
-    padding: 120px 0;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    padding: 120px 15px;
+  }
+
+  > section:first-child {
+    min-height: calc(100vh - 85px);
+    padding: calc(120px - 85px) 15px 120px;
+
+    *:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .container {
     margin: 0 auto;
     max-width: 768px;
-    padding: 0 15px;
 
     &.container--sm {
       max-width: 576px;
@@ -137,6 +148,9 @@ main {
     }
   }
 }
+#articles ul.inline {
+  margin-bottom: 0;
+}
 
 ul.inline,
 time {
@@ -144,7 +158,7 @@ time {
   color: #a0a0a0;
   font-size: 0.8rem;
   list-style: none;
-  margin: 0;
+  margin-left: 0;
 }
 ul.inline {
   li {
@@ -201,7 +215,7 @@ article a:hover h3 {
 article .hero,
 figure img {
   background: white;
-  border: solid 4px #d0d0d0;
+  border: solid 10px #d0d0d0;
   border-radius: 10px;
   font-size: 0;
   transition: 0.2s;
@@ -234,30 +248,28 @@ code {
   padding: 15px;
 }
 #hero {
-  align-items: center;
-  display: flex;
   justify-content: center;
   margin-bottom: 120px;
-  min-height: calc(100vh - 86px);
-  padding: 0 15px;
 }
-#hero .scroll {
+.scroll {
   position: absolute;
   bottom: 30px;
   left: 50%;
-  width: 33px;
-  height: 33px;
-  margin-left: -15px;
+  width: 40px;
+  height: 40px;
+  transform: translateX(-50%);
 }
-#hero .scroll svg {
-  background: transparent;
+.scroll svg {
   fill: $text;
   transform: scale(1);
   transition: all 250ms ease;
   width: 100%;
   height: 100%;
 }
-#hero a.scroll:hover svg {
+a.scroll:hover {
+  background: transparent !important;
+}
+a.scroll:hover svg {
   fill: $primaryHover;
 }
 
@@ -278,7 +290,7 @@ code {
   }
 }
 
-#hero .scroll svg path:last-child {
+.scroll svg path:last-child {
   animation: mouse-scroll 1.5s infinite;
   fill: $primary;
 }

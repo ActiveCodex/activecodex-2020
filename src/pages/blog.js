@@ -2,12 +2,14 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../layouts';
 import Article from '../components/Article';
+import IconScroll from '../img/icons/IconScroll';
 
 const BlogPage = ({ location, data }) => (
     <Layout location={location} id={'blog'} title={'Blog'} description={'Notes and concepts'}>
         <section>
             <div className="container">
                 <h1>Notes and concepts</h1>
+                <span className="scroll"><IconScroll /></span>
             </div>
         </section>
         <section id="articles">

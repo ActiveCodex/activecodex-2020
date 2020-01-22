@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../layouts';
 import Article from '../components/Article';
+import IconScroll from '../img/icons/IconScroll';
 
 const ProjectPage = ({ data }) => (
     <Layout id={'project'} title={'Projects'} description={"Some of my projects"}>
@@ -12,6 +13,7 @@ const ProjectPage = ({ data }) => (
                     Much of my work has been for internal enterprise portals which naturally can't be shared with the public.
                     <br />Below you'll find some of my commercial and personal projects using my skills and experience.
                 </p>
+                <span className="scroll"><IconScroll /></span>
             </div>
         </section>
         <div id="articles">
