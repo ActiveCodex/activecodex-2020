@@ -140,23 +140,25 @@ main nav {
 
 main nav a:link,
 main nav a:visited {
+  background: $primary !important;
   display: block;
-  color: white;
+  color: white !important;
   font-size: 14px;
   padding: 5px 9px;
   text-decoration: none;
   white-space: nowrap;
+  transition: none;
 }
 
 main nav a:hover,
 main nav a:target {
-  background: white;
-  color: $primaryHover;
+  background: white !important;
+  color: $primaryHover !important;
 }
 
 main nav li.active a {
-  background: white;
-  color: $primary;
+  background: white !important;
+  color: $primary !important;
 }
 
 @media only screen and (min-width: 576px) {
