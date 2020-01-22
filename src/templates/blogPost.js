@@ -14,16 +14,15 @@ export default ({ location, data }) => {
                     </article>
                 </div>
             </section>
-            <div><img src={post.frontmatter.hero.publicURL} alt={post.frontmatter.title} title={post.frontmatter.title} /></div>
-            <section>
+            <article>
                 <div className="container content">
                     <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
                 </div>
-            </section>
-            <section className="container container__links">
+            </article>
+            <div className="container container__links">
                 <Link className="btn btn--primary" to="/blog/">Back to Blog</Link>
                 <a className="btn btn--secondary" href="#top">Back to top</a>
-            </section>
+            </div>
         </Layout>
     )
 };

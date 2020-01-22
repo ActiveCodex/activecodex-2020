@@ -1,67 +1,65 @@
 main {
-  section {
-    a {
-      transition: 0.2s;
-    }
+  a {
+    transition: 0.2s;
+  }
 
-    a:not(.btn):link,
-    a:not(.btn):visited {
-      background: $background;
-      color: $primary;
-      text-decoration: none;
-    }
+  a:not(.btn):link,
+  a:not(.btn):visited {
+    background: $background;
+    color: $primary;
+    text-decoration: none;
+  }
 
-    a:not(.btn):hover,
-    a:not(.btn):focus {
-      background: $primaryHover;
-      color: $background;
-    }
+  a:not(.btn):hover,
+  a:not(.btn):focus {
+    background: $primaryHover;
+    color: $background;
+  }
 
-    a.btn:link,
-    a.btn:visited {
-      border: solid 2px transparent;
-      border-radius: 4px;
-      color: $primary;
-      padding: 10px 15px;
-      text-decoration: none;
-    }
+  a.btn:link,
+  a.btn:visited {
+    border: solid 2px transparent;
+    border-radius: 4px;
+    color: $primary;
+    padding: 10px 15px;
+    text-decoration: none;
+  }
 
-    a.btn:hover,
-    a.btn:focus {
-      border-color: $primaryHover;
-      color: $primaryHover;
-    }
+  a.btn:hover,
+  a.btn:focus {
+    border-color: $primaryHover;
+    color: $primaryHover;
+  }
 
-    a.btn.btn--sm {
-      border-width: 1px;
-      font-size: 0.8rem;
-      padding: 8px 10px;
-    }
+  a.btn.btn--sm {
+    border-width: 1px;
+    font-size: 0.8rem;
+    padding: 8px 10px;
+  }
 
-    a.btn.btn--primary:link,
-    a.btn.btn--primary:visited {
-      background: $primary;
-      border-color: $primary;
-      color: white;
-    }
+  a.btn.btn--primary:link,
+  a.btn.btn--primary:visited {
+    background: $primary;
+    border-color: $primary;
+    color: white;
+  }
 
-    a.btn.btn--primary:hover,
-    a.btn.btn--primary:focus {
-      background: $primaryHover;
-      border-color: $primaryHover;
-    }
+  a.btn.btn--primary:hover,
+  a.btn.btn--primary:focus {
+    background: $primaryHover;
+    border-color: $primaryHover;
+  }
 
-    a.btn.btn--secondary:link,
-    a.btn.btn--secondary:visited {
-      border-color: $primary;
-      color: $primary;
-    }
+  a.btn.btn--secondary:link,
+  a.btn.btn--secondary:visited {
+    border-color: $primary;
+    color: $primary;
+  }
 
-    a.btn.btn--secondary:hover,
-    a.btn.btn--secondary:focus {
-      background: $primaryHover;
-      border-color: $primaryHover;
-      color: white;
-    }
+  a.btn.btn--secondary:hover,
+  a.btn.btn--secondary:focus {
+    background: $primaryHover;
+    border-color: $primaryHover;
+    color: white;
   }
 }
