@@ -31,4 +31,4 @@ past:
     - "PHP"
     - "MySQL"
 ---
-I worked on a variety of technologies and acquiring more each day.
+I work on a variety of technologies and acquiring more each day.

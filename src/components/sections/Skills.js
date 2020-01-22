@@ -9,26 +9,19 @@ export default function Skills({ id, data }) {
                 <h2>{heading}</h2>
                 <p className="subheading">{excerpt}</p>
 
-                <h3>Current focus</h3>
-                <ul className="skills skills--focus inline">
+                <p>Since November 2019, my focus has shifted and started learning:</p>
+                <p><ul className="skills skills--focus inline">
                     {focus.map((skill, i) =>
                         <li key={i}>{skill}</li>
                     )}
-                </ul>
+                </ul></p>
 
-                <h3>Good at</h3>
-                <ul className="skills skills--current inline">
+                <p>but I'm currently really great at:</p>
+                <p><ul className="skills skills--current inline">
                     {current.map((skill, i) =>
                         <li key={i}>{skill}</li>
                     )}
-                </ul>
-
-                {/* <h3>Almost forgot</h3>
-                <ul className="skills skills--past inline">
-                    {past.map((skill, i) =>
-                        <li key={i}>{skill}</li>
-                    )}
-                </ul> */}
+                </ul></p>
             </div>
         </section>
     )
