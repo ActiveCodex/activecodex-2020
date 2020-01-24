@@ -105,6 +105,9 @@ main {
     min-height: 100vh;
     padding: 120px 15px;
   }
+  section#timeline {
+    align-items: unset;
+  }
 
   > section:first-child {
     min-height: calc(100vh - 85px);
@@ -118,6 +121,7 @@ main {
   .container {
     margin: 0 auto;
     max-width: 768px;
+    width: 100%;
 
     &.container--sm {
       max-width: 576px;
